@@ -1,30 +1,27 @@
-package HW2;
+package example;
 
-public class degree {
+public class Degree {
     public int base;
     public int index;
     public double exp;
 
-    public degree(){};
-    public degree (int baseDegree, int indexDegree, int expDegree){
-        base = baseDegree;
-        index = indexDegree;
-        exp = expDegree;
+    public Degree(){};
+    public void setBase(int newBase) {
+        base = newBase;
     }
-
-    public int getBase() {
-        return base;
+    public void setIndex(int newIndex) {
+        index = newIndex;
     }
-    public int getIndex() {
-        return index;
+    public Double getExp() {
+         exp = Math.pow(base, index);
+         return exp;
     }
-
-    public double setExp() {
-        this.exp = Math.pow(getBase(), getIndex());
-        return exp;
+    public Double getExpMult(){
+        int firstFactor = 1;
+        for (int i = 0; i < index; i++) {
+            firstFactor *= base;
+        }
+          return exp;
     }
-
-
-
 
 }

@@ -1,3 +1,5 @@
+package HW2;
+
 public class Main {
     public static void main(String[] args) {
         // Піднесення в степінь.
@@ -15,5 +17,5 @@ public class Main {
         }
         System.out.println(e + " в степени " + f + " равняется " + g);
 
-    }
+        }
 }

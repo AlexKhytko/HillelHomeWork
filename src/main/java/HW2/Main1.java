@@ -4,17 +4,13 @@ import java.util.Scanner;
 public class Main1 {
     public static void main(String[] args) {
          //Розрахувати місячну і річну зарплатню з податками та без
-
         // Создание объекта Scanner для чтения ввода с клавиатуры
         Scanner scanner = new Scanner(System.in);
-
         // Введите данные с клавиатуры
         System.out.print("Введите кількість робочих годин на тиждень: ");
         double a1 = scanner.nextInt(); // Чтение целочисленного значения
-
         System.out.print("Введите вартість години: ");
         double a2 = scanner.nextDouble(); // Чтение значения с плавающей точкой
-
         System.out.print("Введите вісоток податку: ");
         double a3 = scanner.nextDouble(); // Чтение значения с плавающей точкой
         // Печать введенных данных
