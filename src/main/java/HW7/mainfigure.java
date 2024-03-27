@@ -15,19 +15,19 @@ public class mainfigure {
 //                - паралелограм
 //                - трапеція
 //                - ромб
-        Circle circle = new Circle(5, 5, 20);
-        circle.getCircle();
-        System.out.println(circle.getCircle());
+        Circle circle = new Circle(10,10, 10);
+        circle.getName();
+        System.out.println(circle.getName()+ circle.getName());
 
         Triangle triangle = new Triangle(10, 15,
                 20, 80, 45, 55);
-        triangle.getTriangle();
-        System.out.println(triangle.getTriangle());
+        triangle.getName();
+        System.out.println(triangle.getName());
 
         TriangleRigth triangleRigth = new TriangleRigth(25, 15,
                 20, 90, 40, 50);
-        triangleRigth.getRightAngle();
-        System.out.println(triangleRigth.getRightAngle());
+        triangleRigth.getName();
+        System.out.println(triangleRigth.getName());
 
         TriangleEquil triangleEquil = new TriangleEquil(15, 15,
                 15, 60, 60, 60);

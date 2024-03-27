@@ -1,9 +1,11 @@
-package HW8;
+package HW8.bird;
 
-public abstract class Bird implements Fly, Walk, Run, Swim{
+import HW8.action.*;
+
+public abstract class Bird implements Fly, Environment, Prey, Predator {
     protected String name;
 
-    Bird(String name) {
+    protected Bird(String name) {
         this.name = name;}
     public String getName (){
         return this.name;
@@ -13,17 +15,17 @@ public abstract class Bird implements Fly, Walk, Run, Swim{
     public void flying() {
         System.out.println("Swoosh! Whoosh!");
     }
-    @Override
-    public void run() {
-        System.out.println("stomp-stomp....");
-    }
 
     @Override
-    public void walk() {
-        System.out.println("tiptoe-tiptoe....");
+    public void prey() {
+        System.out.println("It is a prey.");
     }
     @Override
-    public void swimming() {
-        System.out.println("plop - plop ....");
+    public void predator() {
+        System.out.println("It is a predator.");
+    }
+    @Override
+    public void habitat() {
+        System.out.println("It flies on air.");
     }
 }

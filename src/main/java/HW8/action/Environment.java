@@ -1,5 +1,5 @@
-package HW8;
+package HW8.action;
 
 public interface Environment {
-    void place();
+       void habitat();
 }

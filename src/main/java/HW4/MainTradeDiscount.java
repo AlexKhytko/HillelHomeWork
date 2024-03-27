@@ -7,7 +7,7 @@ public class MainTradeDiscount {
 
         int choiceProduct = Integer.parseInt(args[0]);
 
-        double [] discounts =  {0, 5, 10, 12, 12.4, 12.8, 13.2, 13.6, 15};
+        double [] discounts =  {0, 5, 10, 12, 12.4, 12.8, 13.2, 13.6, 13};
 
         Scanner scanner = new Scanner(System.in);
         boolean repeat = true;

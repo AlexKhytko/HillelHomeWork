@@ -1,2 +1,5 @@
-package HW8.action;public interface Manual {
+package HW8.action;
+
+public interface Manual {
+    void manual();
 }

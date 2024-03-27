@@ -1,11 +1,14 @@
-package HW8;
+package HW8.fish;
 
+import HW8.action.Environment;
+import HW8.action.Predator;
+import HW8.action.Prey;
 import HW8.action.Swim;
 
-public abstract class Fish implements Swim {
-    protected String name;
+public abstract class Fish implements Swim, Environment, Predator, Prey {
+    public String name;
 
-    Fish(String name) {
+    public Fish(String name) {
         this.name = name;
     }
 
@@ -17,36 +20,21 @@ public abstract class Fish implements Swim {
     public void swimming() {
 System.out.println("Buoys....Splash!");
     }
+
+    @Override
+    public void habitat() {
+        System.out.println("It lives under water.");
+    }
+    @Override
+    public void prey() {
+        System.out.println("It is a prey.");
+               }
+
+    @Override
+    public void predator() {
+        System.out.println("It is a predator.");
+    }
 }
-//
-//public class Pike {
-//        public String pike;
-//    Pike() {
-//    };
-//   public static String getPike() {
-//        return "pike"; }
-//}
-//  public class Carp {
-//        public String carp;
-//        Carp() {
-//        };
-//
-//        public static String getCarp() {
-//            return "carp";
-//        }
-//    }
-//
-//    public class Catfish {
-//        public String catfish;
-//
-//        Catfish() {
-//        }
-//
-//        ;
-//
-//        public static String getCatfish() {
-//            return "catfish";
-//        }
 
 
 

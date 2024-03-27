@@ -1,4 +1,4 @@
-package HW8;
+package HW8.action;
 
 public interface Walk {
     void walk();

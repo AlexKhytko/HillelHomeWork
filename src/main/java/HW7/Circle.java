@@ -1,16 +1,18 @@
 package HW7;
 
-public class Circle {
+import javax.naming.Name;
+
+public class Circle extends Figure{
     public int absX;
     public int ordY;
     public int radius;
-    public String circle;
 
     public Circle (int absXCircle, int ordYCircle, int radiusCircle){
         absX = absXCircle;
         ordY = ordYCircle;
         radius = radiusCircle;
-    }
+       String name = super.nameFigure;
+           }
 
     public void setAbsX(int absX) {
         this.absX = absX;
@@ -24,9 +26,9 @@ public class Circle {
         this.radius = radius;
     }
 
-    public String getCircle(){
-        this.circle = "Circle";
-        return circle;
+    public String getName(){
+        nameFigure = "Circle";
+        return nameFigure;
     }
 }
 

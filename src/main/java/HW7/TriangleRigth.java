@@ -1,18 +1,19 @@
 package HW7;
 
 public class TriangleRigth extends Triangle{
-    public String rightAngle;
+    public String name;
      public TriangleRigth(int sideATriangle, int sideBTriangle,int sideCTriangle,
         int angleATriangle, int angleBTriangle, int angleCTriangle){
         super(sideATriangle, sideBTriangle, sideCTriangle, angleATriangle, angleBTriangle, angleCTriangle);
+        name = super.nameFigure;
 
     };
-    public String getRightAngle() {
+    public String getName() {
         if ((angleA == 90 || angleB == 90 || angleC == 90) && (angleA + angleB + angleC == 180) ) {
-            this.rightAngle = "Triangle Rigth";
+            nameFigure = "Triangle Rigth";
         } else {
-            this.rightAngle = "Error input";
+            nameFigure = "Error input";
         }
-        return rightAngle;
+        return nameFigure;
     }
     }

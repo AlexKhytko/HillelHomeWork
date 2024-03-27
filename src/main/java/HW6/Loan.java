@@ -5,7 +5,7 @@ public class Loan {
         public double sumLoan;
     public int month;
     public double per;
-    public double payment;
+  //  public double payment;
        public Loan () {};
        public void setSumLoan (double newSumLoan){
             sumLoan = newSumLoan;

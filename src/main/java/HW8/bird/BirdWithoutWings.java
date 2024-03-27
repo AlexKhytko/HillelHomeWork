@@ -1,9 +1,11 @@
-package HW8;
+package HW8.bird;
 
-public class BirdWithoutWings implements Walk, Swim, Fly{
+import HW8.action.*;
+
+public class BirdWithoutWings implements Walk, Environment, Predator, Prey, Swim, Run {
     protected String name;
 
-    BirdWithoutWings(String name) {
+    protected BirdWithoutWings(String name) {
         this.name = name;}
     public String getName (){
         return this.name;
@@ -15,11 +17,29 @@ public class BirdWithoutWings implements Walk, Swim, Fly{
         System.out.println("tiptoe-tiptoe....");
     }
     @Override
+    public void prey() {
+        System.out.println("It is a prey.");
+    }
+    @Override
+    public void predator() {
+        System.out.println("It isn't a predator, but it can beat legs.");
+    }
+    @Override
+    public void habitat() {
+        System.out.println("It walks on the ground.");
+    }
+
+    @Override
     public void swimming() {
-        System.out.println("plop - plop ....");
+        System.out.println("It can swim.");
+            }
+
+    @Override
+    public void run() {
+        System.out.println("It can run quickly.");
     }
 }
 
 
 
-}
+

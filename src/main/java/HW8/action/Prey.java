@@ -1,2 +1,5 @@
-package HW8.action;public interface Prey {
+package HW8.action;
+
+public interface Prey {
+    void prey();
 }

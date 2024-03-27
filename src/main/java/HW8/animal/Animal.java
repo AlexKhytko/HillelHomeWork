@@ -1,9 +1,11 @@
-package HW8;
+package HW8.animal;
 
-public abstract class Animal implements Walk, Run, Environment{
+import HW8.action.*;
+
+public abstract class Animal implements Walk, Run, Environment, Predator, Prey {
     protected String name;
 
-    Animal(String name) {
+    protected Animal(String name) {
         this.name = name;}
     public String getName (){
         return this.name;
@@ -20,8 +22,17 @@ public abstract class Animal implements Walk, Run, Environment{
     }
 
     @Override
-    public void place() {
-        System.out.println("on the graund");
+    public void habitat() {
+        System.out.println("It lives on the ground");
+    }
+    @Override
+    public void prey() {
+        System.out.println("It is a prey.");
+    }
+
+    @Override
+    public void predator() {
+        System.out.println("It is a predator.");
     }
 }
 

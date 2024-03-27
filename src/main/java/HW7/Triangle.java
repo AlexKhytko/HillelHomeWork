@@ -1,13 +1,13 @@
 package HW7;
 
-public class Triangle {
+public class Triangle extends Figure{
     public int sideA;
     public int sideB;
     public int sideC;
     public int angleA;
     public int angleB;
     public int angleC;
-    public String triangle;
+  //  public String triangle;
 
         public Triangle(int sideATriangle, int sideBTriangle,int sideCTriangle,
                     int angleATriangle, int angleBTriangle, int angleCTriangle){
@@ -17,6 +17,7 @@ public class Triangle {
         angleA = angleATriangle;
         angleB = angleBTriangle;
         angleC = angleCTriangle;
+        String name = super.nameFigure;
 
     };
     public int getSideA() {return sideA;
@@ -40,15 +41,15 @@ public class Triangle {
         return angleC;
     }
 
-    public String getTriangle() {
+    public String getName() {
         if(sideA + sideB > sideC
                 && sideA + sideC > sideB
                 && sideB + sideC > sideA
                 && angleA + angleB + angleC == 180){
-        this.triangle = "Triangle Versatile";}
-        else {this.triangle = "ERROR input";
+        nameFigure = "Triangle Versatile";}
+        else {nameFigure = "ERROR input";
         }
-        return triangle;
+        return nameFigure;
     }
 
     }
