@@ -1,6 +1,8 @@
 package HW8;
 
-public abstract class Fish implements Swim{
+import HW8.action.Swim;
+
+public abstract class Fish implements Swim {
     protected String name;
 
     Fish(String name) {
