@@ -1,41 +1,41 @@
 package HW9;
 
-//https://sheitesnami.ru/razmernye-tablicy-odezhdy
-public enum Size {
+public enum DressLength {
     XS, S, M, L, XL, XXL, XXXL;
 
-    Size() {String name = name();};
-    public String getSize() {
-        String Size;
+    DressLength() {String name = name();};
+    public String getDressLength() {
+        String Length;
         switch (this) {
             case XS:
-                Size = "   40 – 42";
+                Length = "   28";
                 break;
             case S:
-                Size = "   42 – 44";
+                Length = "   29 – 30";
                 break;
             case M:
-                Size = "   44 – 46";
+                Length = "   31 – 32";
                 break;
             case L:
-                Size = "   48 – 50";
+                Length = "   33 – 34";
                 break;
             case XL:
-                Size = "   52 – 54";
+                Length = "   35 – 36";
                 break;
             case XXL:
-                Size = "   54 – 56";
+                Length = "   37 – 38";
                 break;
             case XXXL:
-                Size = "   56 – 58";
+                Length = "   39 – 40";
                 break;
             default:
                 throw new IllegalStateException("Invalid input: " + this);
 
         }
-return Size;
+        return Length;
     }
     public String toString() {
-            return "Men size  : International - " + name() + ";   UA = " + getSize();
+        return ".    Dress length - " + getDressLength();
     }
+
 }

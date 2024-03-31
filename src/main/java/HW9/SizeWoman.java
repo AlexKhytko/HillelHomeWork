@@ -4,8 +4,7 @@ import static HW9.Size.XS;
 
 public enum SizeWoman{
     XS,S, M, L, XL, XXL, XXXL;
-    SizeWoman() {
-    };
+    SizeWoman() {String name = name();};
 
     public String getSizeWoman() {
         String SizeWoman;
@@ -31,20 +30,12 @@ public enum SizeWoman{
             case XXXL:
                 SizeWoman = "   56 – 58";
                 break;
-
-
             default:
                 throw new IllegalStateException("Invalid input: " + this);
-
         }
-
         return SizeWoman;
-
-
     }
     public String toString() {
-
-        System.out.print("Size of Woman  ");
-        return super.toString();
+        return "Women size  : International - " + name() + ";   UA = "  + getSizeWoman();
     }
 }
