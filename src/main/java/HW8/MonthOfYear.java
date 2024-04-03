@@ -3,6 +3,7 @@ package HW8;
 public enum  MonthOfYear {
     JAN,   FEB,   MAR,  APR,    MAY,   JUN,
     JUL,  AUG,    SEP,   NOV,    OCT,   DEC;
+    MonthOfYear(){String name = name();};
     public String getSeason() {
         String season;
         switch (this) {
@@ -29,7 +30,7 @@ public enum  MonthOfYear {
             default:
                 throw new IllegalStateException("Invalid input: " + this);
         }
-
+System.out.println("It's a  " + name());
         return season;
     }
 }

@@ -1,4 +1,4 @@
-package HW9;
+package HW9.sizeBase;
 
 //https://sheitesnami.ru/razmernye-tablicy-odezhdy
 public enum Size {

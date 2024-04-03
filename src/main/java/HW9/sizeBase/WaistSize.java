@@ -1,41 +1,42 @@
-package HW9;
+package HW9.sizeBase;
 
-public enum DressLength {
+public enum WaistSize {
     XS, S, M, L, XL, XXL, XXXL;
 
-    DressLength() {String name = name();};
-    public String getDressLength() {
-        String Length;
+    WaistSize() {String name = name();};
+    public String getWaistSize() {
+        String Waist;
         switch (this) {
             case XS:
-                Length = "   28";
+                Waist = "   71.1";
                 break;
             case S:
-                Length = "   29 – 30";
+                Waist = "   73.7 – 76.2";
                 break;
             case M:
-                Length = "   31 – 32";
+                Waist = "   76.2 – 78.7";
                 break;
             case L:
-                Length = "   33 – 34";
+                Waist = "   78.7 - 81.3";
                 break;
             case XL:
-                Length = "   35 – 36";
+                Waist = "   83.8 – 88.9";
                 break;
             case XXL:
-                Length = "   37 – 38";
+                Waist = "   91.4 - 94";
                 break;
             case XXXL:
-                Length = "   39 – 40";
+                Waist = "   96.5 - 101.6";
                 break;
             default:
                 throw new IllegalStateException("Invalid input: " + this);
 
         }
-        return Length;
+        return Waist;
     }
     public String toString() {
-        return ".    Dress length - " + getDressLength();
+        return ".    WaistSize - " + getWaistSize();
     }
 
 }
+

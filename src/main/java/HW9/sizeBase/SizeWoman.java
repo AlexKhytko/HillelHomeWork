@@ -1,16 +1,15 @@
-package HW9;
-
-import static HW9.Size.XS;
+package HW9.sizeBase;
 
 public enum SizeWoman{
     XS,S, M, L, XL, XXL, XXXL;
     SizeWoman() {String name = name();};
-
+    String SizeWo;
     public String getSizeWoman() {
         String SizeWoman;
-        switch (this) {
+           switch (this) {
             case XS:
                 SizeWoman = "   38 - 40";
+                SizeWo =  "   38 - 40";
                 break;
             case S:
                 SizeWoman = "   42 – 44";
