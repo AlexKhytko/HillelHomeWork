@@ -16,6 +16,7 @@ public class GoCategory {
     public String[] GoCategory = {"1", "2", "3", "4", "5", "6", "7", "8"} ;
     public GoCategory(WebDriver driver) {
         this.driver = driver;
+
     }
     public void getGoToCategory(String category) {
         WebElement element;
