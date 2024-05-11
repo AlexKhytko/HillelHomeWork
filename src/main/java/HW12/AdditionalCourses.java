@@ -12,7 +12,6 @@ public class AdditionalCourses {
     public AdditionalCourses(WebDriver driverList) {
         this.driver = driverList;
     }
-    public AdditionalCourses() {}
 
     public void getAdditionalCourses() {
         List<WebElement> blockProfession = driver.findElements(Additional_Courses);

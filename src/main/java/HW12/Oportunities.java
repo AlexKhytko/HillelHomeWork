@@ -6,13 +6,14 @@ import org.openqa.selenium.WebElement;
 
 import java.util.List;
 
-public class Oportunities {
-    protected WebDriver driver;
+public class Oportunities extends TestingCoursePage{
+   // protected WebDriver driver;
     private static final By List_Oportunities = By.className("opportunities_list");
-    public Oportunities(WebDriver driverList) {
-        this.driver = driverList;
+    public Oportunities(WebDriver driver) {
+      //this.driver = driver
+       // super(driver) = driver;
     }
-    public Oportunities() {}
+//    public Oportunities() {}
 
     public void getOportunities() {
         List<WebElement> opportunityList = driver.findElements(List_Oportunities);

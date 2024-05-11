@@ -7,7 +7,8 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import java.util.ArrayList;
 import static java.sql.DriverManager.getDriver;
 import org.openqa.selenium.WebElement;
-public class TestCourses {
+public class TestCourses{
+
 //    Описати Page Object сторінки https://ithillel.ua/courses/testing та реалізацію методів:
 //    getCourses() - список курсів
 //    getAdditionalCourses() - список додаткових курсів
