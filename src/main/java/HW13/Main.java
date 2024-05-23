@@ -16,14 +16,15 @@ public class Main{
 
 
           List<User> userList = Stream.concat(
-                  Stream.generate(UserGenerator::generateUser).limit(10).sorted((user1, user2) -> user1.getName().compareTo(user2.getName()))
-                   ,Stream.generate(UserGeneratorWoman::generateUserWoman).limit(10).sorted((user1, user2) -> user1.getName().compareTo(user2.getName())))
+                  Stream.generate(UserGenerator::generateUser).limit(100).sorted((user1, user2) -> user1.getName().compareTo(user2.getName()))
+                  ,Stream.generate(UserGeneratorWoman::generateUserWoman).limit(100).sorted((user1, user2) -> user1.getName().compareTo(user2.getName())))
                   .filter(user -> user.getAge()>18)
                   .filter(user -> user.getEmail() == null)
                   .sorted((user1, user2) -> user1.getName().compareTo(user2.getName()))
                   .toList();
 
                   System.out.println(userList.toString());
+
 
      }
 

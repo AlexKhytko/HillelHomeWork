@@ -23,11 +23,15 @@ public class User {
 
     @Override
     public String toString() {
-        System.out.println( name
-            //    + "  " +  age + "  " + email
-                + "  " + gender
+        System.out.print( name + ", "
+//                + "  " +  age + "  " + email
+//                + "  " + gender
         );
        return "";
     }
+//
+//    public void setName(String name) {
+//        this.name = name;
+//    }
 }
 
